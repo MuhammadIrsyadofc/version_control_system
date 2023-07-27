@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>version control system GIT</title>
+    <style>
+body{
+    background-image: url(gambar/github.jpg);
+    background-size: cover;
+}
+table th{
+    color: rgb(18, 210, 149);
+    font-size: 1.5rem;
+}
+table td{
+    color: rgb(142, 191, 56);
+    font-size: 1.3rem;
+}
+table .workflow_merge{
+    color: rgb(159, 247, 19);
+}
+.border{
+    border: 2px solid goldenrod;
+}
+    </style>
+</head>
+<body>
+
+<table border="1" cellspacing="0px" cellpadding="15" class="border">
+    <thead>
+        <tr>
+            <th>configurasi</th>
+            <td>git config --global user.name "irsyadmuhammad.ofc@gmail.com"</td>
+            <td>git config --global user.email "muhammad irsyad"</td>
+            <td>git config --list</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>versi git</th>
+            <td colspan="3">git --version</td>
+        </tr>
+        <tr>
+            <th>initialisasi</th>
+            <td colspan="3">git init</td>
+        </tr>
+        <!-- <tr>
+            <th colspan="4" class="workflow_merge">GIT WORKFLOW MERGE</th>
+        </tr> -->
+    <!-- working tree -->
+    <tr>
+        <th>working tree</th>
+        <td>area working</td>
+        <td>staging area ( git add . )</td>
+        <td>history ( git commit -m "mesage" )</td>
+     </tr>
+    <!-- git branch -->
+        <tr>
+            <th rowspan="2">git branch</th>
+            <td>git branch namabranch</td>
+            <td>git branch --merged</td>
+            <td>git branch -d nama_branch</td>
+         </tr>
+         <tr>
+            <td>git branch -D nama_branch</td>
+            <td colspan="2">git push origin --delete nama_branch</td>
+         </tr>
+    <!-- git checkout -->
+    <tr>
+        <th>git checkout</th>
+        <td>git checkout nama_branch</td>
+        <td>git checkout 7667b -- style.css</td>
+        <td>git checkout -b nama_branch</td>
+     </tr>  
+    <!-- git merge -->
+         <tr>
+            <th>merge</th>
+            <td>git merge nama_branch</td>
+            <td colspan="2">git merge namaremote/master</td>
+         </tr>
+    <!-- git remote -->
+         <tr>
+            <th rowspan="2">git remote</th>
+            <td rowspan="2">git remote</td>
+            <td rowspan="2">git remote -v</td>
+            <td>git remote add origin https://github.com/username</td>
+         </tr>  
+         <tr>
+            <td>git remote add nama_remote https://linkgithub</td>
+         </tr>
+      <!-- git clone -->
+          <tr>
+             <th>git clone</th>
+             <td colspan="3">git clone https://github.com/username/nama repository.git</td>
+          </tr>
+    <!-- git fetch -->
+         <tr>
+            <th>git fetch</th>
+            <td colspan="3">git fetch nama_remote</td>
+         </tr>
+    <!-- git history dan pointer head -->
+         <tr>
+            <th>head position <br> & commit history</th>
+            <td>git log</td>
+            <td>git log --all --decorate --oneline --graph</td>
+            <td>alias graph="git log --all --decorate --oneline --graph"</td>
+         </tr>
+    <!-- git push -->
+         <tr>
+            <th>git push</th>
+            <td>git push -u origin master</td>
+            <td colspan="3">git push</td>
+         </tr>
+         <tr>
+            <th></th>
+            <td>git push origin nama_branch</td>
+            <td colspan="3">git push origin master</td>
+         </tr>
+    <!-- git pull -->
+          <tr>
+            <th>git pull</th>
+            <td colspan="3">git pull</td>
+         </tr>
+         <tr>
+            <th>git rebase</th>
+            <td colspan="3">git rebase nama_branch</td>
+         </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+</body>
+</html>
